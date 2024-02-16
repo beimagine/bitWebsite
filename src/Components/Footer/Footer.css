@@ -1,0 +1,30 @@
+.footer {
+    background: linear-gradient(267.68deg, #271D60 0%, #5630CF 33.5%, #C01E89 62%, #3A10BD 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+    width: 100%;
+}
+
+.FSection2 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Faddress {
+    text-align: justify;
+    width: 40%;
+}
+
+.Faddress p {
+    font-weight: 500;
+}
+
+.copyright {
+    background: linear-gradient(267.68deg, #271D60 0%, #5630CF 33.5%, #C01E89 62%, #3A10BD 100%);
+    text-align: center;
+    padding-bottom: 2rem;
+}

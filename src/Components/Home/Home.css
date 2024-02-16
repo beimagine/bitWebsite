@@ -1,0 +1,86 @@
+.Home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100lvh;
+    background-color: transparent;
+    margin-bottom: 24rem;
+}
+
+.HContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 76%;
+}
+
+.HContent h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.Bword1 {
+    background: linear-gradient(273.88deg, #5A5A5A 0%, #FFFFFF 50%, #8F8F8F 97.5%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-family: "poppins", sans-serif;
+}
+
+.Bword2 {
+    background: linear-gradient(271.09deg, #350ABD 14.39%, #7003B3 31.42%, #AA1899 59.81%, #C4218D 83.58%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.HContent p {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.learnButton {
+    margin-top: 4rem;
+    font-size: 20px;
+    padding: 1.2rem 3rem;
+    border: 1px solid;
+    background: linear-gradient(255.62deg, #030114 -4.68%, #2B1676 48.42%, #030114 94.62%);
+    border-radius: 30px;
+    color: #fff;
+    border-image: linear-gradient(266.32deg, #C4218D -3.18%, #D700FF 23.93%, #7003B3 103.12%);
+    border-image-slice: 1;
+    outline: 2px solid transparent;
+    /* box-shadow: -10px 10px 67px 0px #FFFFFF6B; */
+    box-shadow: 0px 0px 67px 20px #7003B3;
+}
+
+.vision{
+    width: 100%;
+    height: 100lvh;
+    background: url('/assets/VBG.png');
+}
+.Vcontent{
+    width: 30%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.visionWord{
+    background: linear-gradient(266.35deg, rgba(102, 102, 102, 0.9) -12.17%, #FFFFFF 10.43%, #FFFFFF 48.89%, #FFFFFF 84.31%, rgba(102, 102, 102, 0.9) 109.95%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.Vcontent h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.Vcontent p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2rem;
+}

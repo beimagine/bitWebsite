@@ -1,0 +1,36 @@
+.partnerTitle {
+    font-size: 48px;
+    font-weight: 600;
+    color: #C4218D;
+    text-align: center;
+}
+
+.PcarousalSection{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.Pslider{
+    display: flex;
+    width: 100%;
+}
+.Pcarousal{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Pbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    height: 33vh;
+    width: 75%;
+    margin-left: 1rem;
+    gap: 2rem;
+    border-radius: 7px;
+    background: linear-gradient(223.66deg, #574DBC 0%, rgba(23, 22, 24, 0) 102.46%);    
+    box-shadow: 0px 0px 4px 0px #FFFFFF99;
+}
