@@ -34,3 +34,9 @@
     background: linear-gradient(223.66deg, #574DBC 0%, rgba(23, 22, 24, 0) 102.46%);    
     box-shadow: 0px 0px 4px 0px #FFFFFF99;
 }
+
+@media only screen and (max-width: 768px) {
+    .Pbox{
+        margin: auto;
+    }
+}

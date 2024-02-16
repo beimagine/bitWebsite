@@ -84,3 +84,29 @@
     font-weight: 600;
     margin-top: 2rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .HContent h1{
+        font-size: 26px;
+    }
+    .HContent p{
+        font-size: 9px;
+    }
+    .learnButton{
+        width: 88.71px;
+        height: 29.29px;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .Vcontent{
+        width: 60%;
+    }
+    .Vcontent h1{
+        font-size: 26px;
+    }
+
+    .Vcontent p{
+        font-size: 10px;
+    }
+}

@@ -10,7 +10,13 @@
     margin: 12rem 0rem;
 
 }
-
+.walletImg{
+    display: flex;
+    width: 35%;
+}
+.walletImg img{
+    width: 80%;
+}
 .walletContent {
     display: flex;
     flex-direction: column;
@@ -93,7 +99,13 @@
     background-size: 100%;
 
 }
-
+.DPPImg{
+    display: flex;
+    width: 40%;
+}
+.DPPImg img{
+    width: 100%;
+}
 .DPPContent {
     display: flex;
     flex-direction: column;
@@ -120,4 +132,71 @@
     font-size: 18px;
     margin-top: 1rem;
     /* box-shadow: 0px 4px 4px 0px #00000091; */
+}
+
+@media only screen and (max-width: 768px) {
+    .wallet{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .walletImg{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .walletContent{
+        width: 95%;
+        padding-left: 30%;
+    }
+    .walletContent h1{
+        font-size: 26px;
+    }
+    .walletSubT{
+        font-size: 12px;
+    }
+    .walletPara{
+        font-size: 12px;
+    }
+    .launchButton{
+        width: 135px;
+        height: 45.19px;
+        font-size: 12px;
+    }
+    .bhoomi{
+        width: 95%;
+        padding: 0rem 0.5rem;
+    }
+    .bhoomi h1{
+        font-size: 26px;
+    }
+    .bhoomi p{
+        font-size: 10px;
+    }
+    .bhoomiSubT p{
+        font-size: 12px;
+    }
+    .DPP{
+        flex-direction: column-reverse;
+    }
+    .DPPImg{
+        width: 90%;
+        margin: auto;
+    }
+    .DPPContent{
+        width: 95%;
+        padding-left: 10%;
+    }
+    .DPP h1{
+        font-size: 26px;
+    }
+    .DPPSubT{
+        font-size: 12px;
+    }
+    .DPPPara{
+        font-size: 10px;
+    }
+    .launchButton{
+        width: 135px;
+        height: 45.19px;
+        font-size: 12px;
+    }
 }

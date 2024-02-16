@@ -1,5 +1,6 @@
 'use client'
 import "./Roadmap.css"
+import React, { useState, useEffect } from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -8,8 +9,25 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import { TimelineOppositeContent } from "@mui/lab";
 import TimelineDot from '@mui/lab/TimelineDot';
 
-  
-  const Roadmap = () => {
+const Roadmap = () => {
+
+    const screenWidth = window.innerWidth
+    const [isMobile, setIsMobile] = useState(screenWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(screenWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const timelineClass = isMobile ? 'timeline mobile' : 'timeline';
+
 
     return (
         <div className="roadSection">
@@ -17,27 +35,27 @@ import TimelineDot from '@mui/lab/TimelineDot';
             <br></br>
             <br></br>
             <div className="roadmap">
-                <Timeline position="alternate">
+                <Timeline className={timelineClass} position={isMobile ? 'right' : 'alternate'}>
                     <TimelineItem>
-                        <TimelineOppositeContent><img src="/assets/RBG1.svg"/></TimelineOppositeContent>
+                        <TimelineOppositeContent><img className="RBG1" src="/assets/RBG1.svg" /></TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot className="dot" />
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent> 
-                        <div className="Q1">
-                            <h1>Quarter 1</h1>
-                            <h2>Bitmemoir Mainnet Launch</h2>
-                            <p>The Bitmemoir platform will officially go live. People will be able to use it to issue, store, and share their sensitive documents and credentials.</p>
-                            <h2>Bitmemoir Integration Framework</h2>
-                            <p>Integration into other systems or platforms will be enabled, making the platform more versatile and accessible.</p>
-                            <h2>Bitwallet Beta Launch</h2>
-                            <p>The beta version of Bitwallet will be released which will allow users to store and manage their digital assets securely.</p>
-                            <h2>BitBhoomi MVP Launch</h2>
-                            <p>A basic version of BitBhoomi, will be launched, showcasing the core features and functionality of the platform.</p>
-                            <h2>BitBhoomi Beta Launch</h2>
-                            <p>The beta version of BitBhoomi will be released, allowing users to test and provide feedback on the platform before its official launch.</p>
-                        </div>
+                        <TimelineContent>
+                            <div className="Q1">
+                                <h1>Quarter 1</h1>
+                                <h2>Bitmemoir Mainnet Launch</h2>
+                                <p>The Bitmemoir platform will officially go live. People will be able to use it to issue, store, and share their sensitive documents and credentials.</p>
+                                <h2>Bitmemoir Integration Framework</h2>
+                                <p>Integration into other systems or platforms will be enabled, making the platform more versatile and accessible.</p>
+                                <h2>Bitwallet Beta Launch</h2>
+                                <p>The beta version of Bitwallet will be released which will allow users to store and manage their digital assets securely.</p>
+                                <h2>BitBhoomi MVP Launch</h2>
+                                <p>A basic version of BitBhoomi, will be launched, showcasing the core features and functionality of the platform.</p>
+                                <h2>BitBhoomi Beta Launch</h2>
+                                <p>The beta version of BitBhoomi will be released, allowing users to test and provide feedback on the platform before its official launch.</p>
+                            </div>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
@@ -63,9 +81,9 @@ import TimelineDot from '@mui/lab/TimelineDot';
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
-                    <TimelineOppositeContent></TimelineOppositeContent>
+                        <TimelineOppositeContent></TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineDot className="dot"/>
+                            <TimelineDot className="dot" />
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent>
@@ -83,9 +101,9 @@ import TimelineDot from '@mui/lab/TimelineDot';
                     <TimelineItem>
                         <TimelineOppositeContent><img className="RBG2" src="/assets/RBG2.svg"></img></TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineDot className="dot"/>
+                            <TimelineDot className="dot" />
                             <TimelineConnector />
-                            <TimelineDot className="dot"/>
+                            <TimelineDot className="dot" />
                         </TimelineSeparator>
                         <TimelineContent>
                             <div className="Q4">
