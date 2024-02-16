@@ -8,26 +8,13 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import { TimelineOppositeContent } from "@mui/lab";
 import TimelineDot from '@mui/lab/TimelineDot';
+import { useTheme } from '@mui/system';
+import { useMediaQuery } from '@mui/material';
 
 const Roadmap = () => {
 
-    const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
-    const [isMobile, setIsMobile] = useState(screenWidth <= 768);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(screenWidth <= 768);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [screenWidth]);
-
-    const timelineClass = isMobile ? 'timeline mobile' : 'timeline';
-
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <div className="roadSection">
@@ -35,7 +22,7 @@ const Roadmap = () => {
             <br></br>
             <br></br>
             <div className="roadmap">
-                <Timeline className={timelineClass} position={isMobile ? 'right' : 'alternate'}>
+                <Timeline  position={isSmallScreen ? 'right' : 'alternate'}>
                     <TimelineItem>
                         <TimelineOppositeContent><img className="RBG1" src="/assets/RBG1.svg" /></TimelineOppositeContent>
                         <TimelineSeparator>
