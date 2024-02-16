@@ -11,7 +11,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 
 const Roadmap = () => {
 
-    const screenWidth = window.innerWidth
+    const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
     const [isMobile, setIsMobile] = useState(screenWidth <= 768);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const Roadmap = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [screenWidth]);
 
     const timelineClass = isMobile ? 'timeline mobile' : 'timeline';
 
