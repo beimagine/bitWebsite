@@ -1,6 +1,6 @@
 import Image from "next/image";
-import "./Navbar.css"; // Import your CSS file
 import Link from "next/link";
+import "./Navbar.css"; 
 
 const Navbar = () => {
     return (
@@ -149,7 +149,7 @@ const Navbar = () => {
             </div>
 
             <div className="normalButtonContainer">
-                <button className="normalButton"><span>Normal Button</span></button>
+                <button className="normalButton"><span>Contact Us</span></button>
             </div>
         </div>
     );

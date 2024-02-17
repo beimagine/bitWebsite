@@ -1,11 +1,13 @@
-.teamTitle{
+.teamTitle {
     font-size: 48px;
     font-weight: 600;
     color: #C4218D;
     text-align: center;
     padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
-.team{
+
+.team {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     padding: 0px 5rem;
@@ -14,10 +16,11 @@
     align-items: center;
     justify-items: center;
     align-content: center;
-    
+
 
 }
-.Tbox{
+
+.Tbox {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -25,11 +28,12 @@
     align-items: center;
 }
 
-.Tbox p{
+.Tbox p {
     font-size: 16px;
     font-weight: 500;
 }
-.Tbox h3{
+
+.Tbox h3 {
     font-size: 20px;
     font-weight: 600;
 }

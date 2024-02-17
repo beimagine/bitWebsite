@@ -1,10 +1,11 @@
 .roadSection {
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 8rem 0rem; */
     padding: 8rem 0rem;
+    background: url(/assets/starsBg.png);
+    background-size: cover;
+    background-position: 0 45%;
 }
 
 .roadTitle {

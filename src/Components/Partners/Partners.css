@@ -1,8 +1,16 @@
+.partnerSection{
+    background: url(/assets/starsBg.png);
+    background-size: cover;
+    background-position: 0 30%;
+    margin-bottom: 4rem;
+}
+
 .partnerTitle {
     font-size: 48px;
     font-weight: 600;
     color: #C4218D;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .PcarousalSection{

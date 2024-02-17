@@ -54,6 +54,7 @@ const Projects = () => {
 
     return (
         <>
+        <div className="projectContainer">
             <h1 className="PTitle">
                 <span className="PWord">Our Projects</span>
             </h1>
@@ -78,6 +79,7 @@ const Projects = () => {
                     <Image src={"/assets/launch.svg"} width={40} height={40} alt="launch" />
                 </button>
             </div>
+        </div>
 
             <div className="carousalSection">
                 <Slider {...settings} className="slider">

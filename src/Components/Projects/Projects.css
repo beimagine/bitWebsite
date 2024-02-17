@@ -1,3 +1,9 @@
+.projectContainer {
+    background: url(/assets/starsBg.png);
+    background-size: cover;
+    background-position: 0 -205px;
+}
+
 .PTitle {
     font-weight: 600;
     font-size: 48px;
@@ -69,7 +75,6 @@
 }
 
 .box {
-    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;

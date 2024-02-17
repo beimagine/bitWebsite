@@ -55,35 +55,39 @@ const Projects2 = () => {
 
   return (
     <>
-      <div className="wallet">
-        <div className="walletImg">
-          {/* <Image
+      <div className="walletContainer">
+        <div className="wallet">
+          <div className="walletImg">
+            {/* <Image
             src={"/assets/walletD.svg"}
             width={500}
             height={600}
             alt="walletD"
           /> */}
-          <img src="/assets/walletD.svg"></img>
-        </div>
-        <div className="walletContent">
-          <h1>Bit Wallet</h1>
-          <p className="walletSubT">Your Secure Digital Wallet</p>
-          <p className="walletPara">
-            Your go-to non-custodial digital wallet that ensures the safety of
-            your digital assets, offering a seamless and user-friendly
-            experience.
-          </p>
-          <button className="launchButton">
-            <span>Launch Dapp</span>{" "}
-            <Image
-              src={"/assets/launch.svg"}
-              width={40}
-              height={40}
-              alt="launch"
-            />
-          </button>
+            <img src="/assets/walletD.svg"></img>
+          </div>
+          <div className="walletContent">
+            <h1>Bit Wallet</h1>
+            <p className="walletSubT">Your Secure Digital Wallet</p>
+            <p className="walletPara">
+              Your go-to non-custodial digital wallet that ensures the safety of
+              your digital assets, offering a seamless and user-friendly
+              experience.
+            </p>
+            <button className="launchButton">
+              <span>Launch Dapp</span>{" "}
+              <Image
+                src={"/assets/launch.svg"}
+                width={40}
+                height={40}
+                alt="launch"
+              />
+            </button>
+          </div>
         </div>
       </div>
+
+      <div className="emptyDiv"></div>
 
       <div className="bhoomiSection">
         <div className="bhoomi">
@@ -127,34 +131,36 @@ const Projects2 = () => {
         </div>
       </div>
 
-      <div className="DPP">
-        <div className="DPPImg">
-          {/* <Image
+      <div className="dppContainer">
+        <div className="DPP">
+          <div className="DPPImg">
+            {/* <Image
             src={"/assets/DppD.svg"}
             width={700}
             height={600}
             alt="DppD"
           /> */}
-          <img src="/assets/DppD.svg"></img>
-        </div>
-        <div className="DPPContent">
-          <h1>BITDPP</h1>
-          <p className="DPPSubT">The New-Age Digital Product Passport</p>
-          <p className="DPPPara">
-            A visionary concept that aims to revolutionize the perspective
-            towards daily-use products by placing a spotlight on sustainability
-            and the intricate journey they undertake from their source to the
-            consumer's hands.
-          </p>
-          <button className="launchButton">
-            <span>Launch Dapp</span>{" "}
-            <Image
-              src={"/assets/launch.svg"}
-              width={40}
-              height={40}
-              alt="launch"
-            />
-          </button>
+            <img src="/assets/DppD.svg"></img>
+          </div>
+          <div className="DPPContent">
+            <h1>BITDPP</h1>
+            <p className="DPPSubT">The New-Age Digital Product Passport</p>
+            <p className="DPPPara">
+              A visionary concept that aims to revolutionize the perspective
+              towards daily-use products by placing a spotlight on sustainability
+              and the intricate journey they undertake from their source to the
+              consumer's hands.
+            </p>
+            <button className="launchButton">
+              <span>Launch Dapp</span>{" "}
+              <Image
+                src={"/assets/launch.svg"}
+                width={40}
+                height={40}
+                alt="launch"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </>
