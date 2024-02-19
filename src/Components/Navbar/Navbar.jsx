@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./Navbar.css"; 
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
     return (
+        <>
         <div className="navbarContainer">
             <div className="logoContainer">
                 <Image
@@ -13,6 +15,7 @@ const Navbar = () => {
                     alt="logo"
                 />
             </div>
+            
             <div className="buttonContainer">
                 <div className="dropdown">
                     <button>
@@ -151,7 +154,12 @@ const Navbar = () => {
             <div className="normalButtonContainer">
                 <button className="normalButton"><span>Contact Us</span></button>
             </div>
+
         </div>
+            <div className="side">
+                <Sidebar/>
+            </div>
+            </>
     );
 }
 

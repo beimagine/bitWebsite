@@ -75,7 +75,7 @@ body {
   overflow-x: hidden;
   font-family: "inter", sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: #030114;
 }
 
 body {
@@ -96,5 +96,13 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: url('/assets/BG1M.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }

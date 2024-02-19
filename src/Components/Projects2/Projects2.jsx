@@ -55,39 +55,39 @@ const Projects2 = () => {
 
   return (
     <>
-      <div className="walletContainer">
-        <div className="wallet">
-          <div className="walletImg">
-            {/* <Image
+      <div className="emptyDiv">
+        <div className="walletContainer">
+          <div className="wallet">
+            <div className="walletImg">
+              {/* <Image
             src={"/assets/walletD.svg"}
             width={500}
             height={600}
             alt="walletD"
           /> */}
-            <img src="/assets/walletD.svg"></img>
-          </div>
-          <div className="walletContent">
-            <h1>Bit Wallet</h1>
-            <p className="walletSubT">Your Secure Digital Wallet</p>
-            <p className="walletPara">
-              Your go-to non-custodial digital wallet that ensures the safety of
-              your digital assets, offering a seamless and user-friendly
-              experience.
-            </p>
-            <button className="launchButton">
-              <span>Launch Dapp</span>{" "}
-              <Image
-                src={"/assets/launch.svg"}
-                width={40}
-                height={40}
-                alt="launch"
-              />
-            </button>
+              <img src="/assets/walletD.svg"></img>
+            </div>
+            <div className="walletContent">
+              <h1>Bit Wallet</h1>
+              <p className="walletSubT">Your Secure Digital Wallet</p>
+              <p className="walletPara">
+                Your go-to non-custodial digital wallet that ensures the safety of
+                your digital assets, offering a seamless and user-friendly
+                experience.
+              </p>
+              <button className="launchButton">
+                <span>Launch Dapp</span>{" "}
+                <Image
+                  src={"/assets/launch.svg"}
+                  width={40}
+                  height={40}
+                  alt="launch"
+                />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="emptyDiv"></div>
 
       <div className="bhoomiSection">
         <div className="bhoomi">
@@ -106,7 +106,7 @@ const Projects2 = () => {
               width={40}
               height={40}
               alt="launch"
-            />
+              />
           </button>
         </div>
 
@@ -121,7 +121,7 @@ const Projects2 = () => {
                     width={50}
                     height={50}
                     alt="boximg"
-                  />
+                    />
                   <h2>{data.title}</h2>
                   <p>{data.desc}</p>
                 </div>
@@ -130,6 +130,7 @@ const Projects2 = () => {
           </Slider>
         </div>
       </div>
+            </div>
 
       <div className="dppContainer">
         <div className="DPP">

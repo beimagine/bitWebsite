@@ -2,6 +2,7 @@
     background: url(/assets/starsBg.png);
     background-size: cover;
     background-position: 0 -205px;
+    /* margin-bottom: 15%; */
 }
 
 .PTitle {
@@ -44,7 +45,7 @@
     margin-top: 1rem;
 }
 
-.launchButton {
+.mlaunchButton {
     margin-top: 2rem;
     padding: 0.8rem 2rem;
     font-size: 16px;
@@ -55,6 +56,7 @@
     border-radius: 35px;
     border: none;
     background: linear-gradient(267.91deg, rgba(251, 160, 95, 0.88) 2.86%, #C4218D 51.43%, #7003B3 98.06%);
+    box-shadow: 0px 0px 64.19999694824219px 0px #FFFFFF6B;
 }
 
 
@@ -95,10 +97,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+    .projectContainer{
+        margin-bottom: 15%
+    }
     .PTitle {
         font-size: 26px;
-        margin-left: 8%;
+        margin-left: 5%;
+        text-align: left;
+        margin-top: 0rem;
     }
 
     .memoir h1 {
@@ -116,12 +122,11 @@
 
     .memoir {
         width: 354px;
-        margin-left: 8%;
+        margin-left: 5%;
     }
 
-    .launchButton {
-        width: 135px;
-        height: 45.19px;
+    .mlaunchButton {
         font-size: 12px;
+        padding: 0.5rem 1rem;
     }
 }

@@ -1,8 +1,7 @@
 .partnerSection{
-    background: url(/assets/starsBg.png);
+    background:url(/assets/starsBg.png);
     background-size: cover;
-    background-position: 0 30%;
-    margin-bottom: 4rem;
+    background-position:left 0 top 30%;
 }
 
 .partnerTitle {
@@ -23,8 +22,13 @@
     width: 100%;
 }
 .Pcarousal{
+    position: relative;
+    /* background: url('/assets/partnersBGL.svg'), url('/assets/partnersBGR.svg') fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top , right  top; */
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .Pbox{
@@ -46,5 +50,8 @@
 @media only screen and (max-width: 768px) {
     .Pbox{
         margin: auto;
+    }
+    .partnerTitle{
+        font-size: 26px;
     }
 }

@@ -35,8 +35,10 @@ const Home = () => {
             <Projects2 />
             <Roadmap />
             <Partners />
+            <div className='TCBG'>
             <Team />
             <Contact />
+            </div>
         </>
     )
 }

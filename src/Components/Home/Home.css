@@ -44,16 +44,37 @@
 
 .learnButton {
     margin-top: 4rem;
-    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
     padding: 1.2rem 3rem;
-    border: 1px solid;
-    border-radius: 5rem;
-    color: #fff;
+    font-size: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to left, #C4218D, #D9D9D914);
+    box-shadow: -10px 15px 57px 12px #7003B3;
+    z-index: 1;
+}
+
+.learnButton::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1.5px;
+    bottom: 1px;
+    left: 2px;
     background: linear-gradient(255.62deg, #030114 -4.68%, #2B1676 48.42%, #030114 94.62%);
-    border-image: linear-gradient(266.32deg, #C4218D -3.18%, #D700FF 23.93%, #7003B3 103.12%);
-    border-image-slice: 1;
-    outline: 2px solid transparent;
-    box-shadow: 0px 0px 67px 20px #7003B3;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.learnButton::after {
+    content: attr(data);
+    color: #fff;
+}
+
+.learnButton:hover {
+    transform: scale(1.1);
 }
 
 .emptyContainer {
@@ -65,7 +86,10 @@
 .vision {
     width: 100%;
     height: 100lvh;
-    background: url('/assets/visionBg.png') center center/cover no-repeat;
+    background: url('/assets/visionBG.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .Vcontent {
@@ -94,7 +118,20 @@
     margin-top: 2rem;
 }
 
+.TCBG {
+    background: url('/assets/teamBG.svg');
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: right 0rem top -30rem;
+    background-size: 80%;
+}
+
 @media only screen and (max-width: 768px) {
+    .Home {
+        height: auto;
+        padding: 4rem 0rem;
+    }
+
     .HContent h1 {
         font-size: 26px;
     }
@@ -104,10 +141,19 @@
     }
 
     .learnButton {
+        margin-top: 1.5rem;
         width: 88.71px;
         height: 29.29px;
         font-size: 10px;
         padding: 0;
+    }
+
+    .emptyContainer {
+        display: none;
+    }
+
+    .vision {
+        height: 60vh;
     }
 
     .Vcontent {
@@ -120,5 +166,9 @@
 
     .Vcontent p {
         font-size: 10px;
+    }
+
+    .TCBG{
+        background-position: right  top;
     }
 }

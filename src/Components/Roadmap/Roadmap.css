@@ -1,7 +1,7 @@
 .roadSection {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     padding: 8rem 0rem;
     background: url(/assets/starsBg.png);
     background-size: cover;
@@ -12,6 +12,7 @@
     background: linear-gradient(90deg, #424242 -20.12%, #F2F2F2 14.58%, #FFFFFF 48.57%, #EBEBEB 86.11%, #424242 121.52%);
     -webkit-background-clip: text;
     color: transparent;
+    text-align: center;
     display: inline-block;
     font-size: 40px;
     font-weight: 600;
@@ -20,6 +21,10 @@
 .roadmap {
     display: flex;
     flex-direction: column;
+    background: url('/assets/roadBG1.svg'), url('/assets/roadBG2.svg');
+    background-repeat: no-repeat;
+    background-position: right top -22rem, left -5rem top 10rem;
+    background-size: 50%, 100%;
 }
 
 .RBG1,
@@ -77,13 +82,17 @@
     background: linear-gradient(229.2deg, #C4218D 7.71%, #5E023E 90.57%);
     /* background-repeat: no-repeat; */
     border-radius: 50%;
-    box-shadow: 0px 0px 29.899999618530273px 3px #7003B3;
+    box-shadow: 0px 0px 29.899999618530273px 5px #7003B3;
 }
 
 @media only screen and (max-width: 768px) {
-
+    .roadSection{
+        padding: 2rem 0rem;
+    }
     .roadTitle {
         font-size: 26px;
+        text-align: left;
+        margin-left: 8%;
     }
 
     .Q1 h1,
