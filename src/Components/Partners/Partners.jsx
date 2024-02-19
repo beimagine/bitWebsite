@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect } from "react";
 import { partnersData } from "./partnersData";
+import { Element } from 'react-scroll';
 const Partners = () => {
 
     const [slidesToShow, setSlidesToShow] = useState(4);
@@ -49,31 +50,33 @@ const Partners = () => {
             ></div>
         ),
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 1500,
         pauseOnHover: true,
     };
 
-    return(
-        <div className='partnerSection'>
-            <h1 className='partnerTitle'>Our Partners</h1>
-            <div className="PcarousalSection">
-                <Slider {...settings} className="Pslider">
-                    {partnersData.map((data, index) => (
-                        <div key={index} className="Pcarousal">
-                            <div className="Pbox">
-                                <Image
-                                    src={`${data.img}`}
-                                    className="boxImg"
-                                    width={150}
-                                    height={100}
-                                    alt="boximg"
-                                />
+    return (
+        <Element name='partners'>
+            <div className='partnerSection'>
+                <h1 className='partnerTitle'>Our Partners</h1>
+                <div className="PcarousalSection">
+                    <Slider {...settings} className="Pslider">
+                        {partnersData.map((data, index) => (
+                            <div key={index} className="Pcarousal">
+                                <div className="Pbox">
+                                    <Image
+                                        src={`${data.img}`}
+                                        className="boxImg"
+                                        width={150}
+                                        height={100}
+                                        alt="boximg"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
-        </div>
+        </Element>
     )
 }
 export default Partners

@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100lvh;
+    height: 100vh;
     background-color: transparent;
     background: url('/assets/starsBg.png') center center/cover no-repeat;
 }
@@ -78,7 +78,7 @@
 }
 
 .emptyContainer {
-    height: 24rem;
+    height: 10rem;
     background: url('/assets/starsBg.png');
     background-size: cover;
 }

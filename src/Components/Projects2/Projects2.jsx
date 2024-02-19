@@ -49,7 +49,7 @@ const Projects2 = () => {
       ></div>
     ),
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 1500,
     pauseOnHover: true,
   };
 

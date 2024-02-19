@@ -1,5 +1,7 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { Link as Scroll} from "react-scroll";
 import "./Navbar.css"; 
 import Sidebar from "./Sidebar";
 
@@ -30,7 +32,7 @@ const Navbar = () => {
                             alt="v" />
                     </button>
                     <div className="dropdownContent">
-                        <Link href={''}>
+                        <Link href={'http://www.bitmemoir.com/'} target="blank">
                             <div className="drpItem">
                                 <div className="drpItemContent">
                                     <h4 className="drpTitle">Bitmemoir</h4>
@@ -108,7 +110,7 @@ const Navbar = () => {
                             alt="NavBimg" />
                     </button>
                     <div className="dropdownContent2">
-                        <Link href={''}>
+                        <Scroll to='team' smooth={true} duration={500}>
                             <div className="drpItem2">
                                 <div className="drpItemContent">
                                     <h4 className="drpTitle">Team</h4>
@@ -120,8 +122,8 @@ const Navbar = () => {
                                     height={40}
                                     alt="drpItemimg" />
                             </div>
-                        </Link>
-                        <Link href={''}>
+                        </Scroll>
+                        <Scroll to='partners' smooth={true} duration={500}>
                             <div className="drpItem2">
                                 <div className="drpItemContent">
                                     <h4 className="drpTitle">Partners</h4>
@@ -133,8 +135,8 @@ const Navbar = () => {
                                     height={40}
                                     alt="drpItemimg" />
                             </div>
-                        </Link>
-                        <Link href={''}>
+                        </Scroll>
+                        <Scroll to='roadmap' smooth={true} duration={500}>
                             <div className="drpItem2">
                                 <div className="drpItemContent">
                                     <h4 className="drpTitle">Roadmap</h4>
@@ -146,7 +148,7 @@ const Navbar = () => {
                                     height={40} 
                                     alt="drpItemimg" />
                             </div>
-                        </Link>
+                        </Scroll>
                     </div>
                 </div>
             </div>

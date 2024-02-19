@@ -1,12 +1,14 @@
 'use client'
-import { slide as Menu } from "react-burger-menu"
+import React, { useState } from "react";
+import { fallDown as Menu } from "react-burger-menu"
 import Image from "next/image";
 import Link from "next/link";
+import { Link as Scroll } from "react-scroll";
 import "./Navbar.css";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+    
     return (
-
         <div className="sidebar" >
             <div className="logoContainer">
                 <Image
@@ -16,7 +18,15 @@ const Sidebar = () => {
                     alt="logo"
                 />
             </div>
-            <Menu right width={'100%'}>
+            <Menu right  width={'100%'}>
+                <div className="sidelogo">
+                    <Image
+                        src={'/assets/logo.svg'}
+                        width={100}
+                        height={100}
+                        alt="logo"
+                    />
+                </div>
                 <div className="buttonContainer">
                     <div className="dropdown">
                         <button>
@@ -31,7 +41,7 @@ const Sidebar = () => {
                                 alt="v" />
                         </button>
                         <div className="dropdownContent">
-                            <Link href={''}>
+                            <Link href={'http://www.bitmemoir.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent">
                                         <h4 className="drpTitle">Bitmemoir</h4>
@@ -109,9 +119,9 @@ const Sidebar = () => {
                                 alt="NavBimg" />
                         </button>
                         <div className="dropdownContent2">
-                            <Link href={''}>
-                                <div className="drpItem2">
-                                    <div className="drpItemContent">
+                            <Scroll to="team" smooth={true} duration={500} >
+                                <div className="drpItem2" >
+                                    <div className="drpItemContent" >
                                         <h4 className="drpTitle">Team</h4>
                                     </div>
                                     <Image
@@ -121,8 +131,8 @@ const Sidebar = () => {
                                         height={40}
                                         alt="drpItemimg" />
                                 </div>
-                            </Link>
-                            <Link href={''}>
+                            </Scroll>
+                            <Scroll to="partners">
                                 <div className="drpItem2">
                                     <div className="drpItemContent">
                                         <h4 className="drpTitle">Partners</h4>
@@ -134,8 +144,8 @@ const Sidebar = () => {
                                         height={40}
                                         alt="drpItemimg" />
                                 </div>
-                            </Link>
-                            <Link href={''}>
+                            </Scroll>
+                            <Scroll to="roadmap">
                                 <div className="drpItem2">
                                     <div className="drpItemContent">
                                         <h4 className="drpTitle">Roadmap</h4>
@@ -147,7 +157,7 @@ const Sidebar = () => {
                                         height={40}
                                         alt="drpItemimg" />
                                 </div>
-                            </Link>
+                            </Scroll>
                         </div>
                     </div>
                 </div>
@@ -155,7 +165,8 @@ const Sidebar = () => {
                 {/* <div className="normalButtonContainer">
                 <button className="normalButton"><span>Contact Us</span></button>
             </div> */}
-        </Menu >
+        
+            </Menu >
         </div>
     )
 }

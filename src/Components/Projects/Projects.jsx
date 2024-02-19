@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect } from "react";
 import { carousalData } from "./carousalData";
+import Link from "next/link";
 const Projects = () => {
     const [slidesToShow, setSlidesToShow] = useState(4);
     const [slidesToScroll, setSlidesToScroll] = useState(3);
@@ -48,7 +49,7 @@ const Projects = () => {
             ></div>
         ),
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 1500,
         pauseOnHover: true,
     };
 
@@ -74,10 +75,12 @@ const Projects = () => {
                         blockchain technology to create a decentralized way to secure digital
                         records and create a tamper-proof infrastructure.
                     </p>
+                    <Link href={'http://www.bitmemoir.com/'} target="blank">
                     <button className="mlaunchButton">
                         <span>Launch Dapp</span>{" "}
                         <Image src={"/assets/launch.svg"} width={40} height={40} alt="launch" />
                     </button>
+                    </Link>
                 </div>
 
                 <div className="carousalSection">

@@ -151,13 +151,18 @@
     .navbarContainer {
         display: none;
     }
-
+    .sidelogo{
+        margin-left: 5%;
+    }
     .side {
         display: flex;
     }
 
     .logoContainer {
-        margin-left: 25%;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        gap: 80px;
     }
 
     .bm-burger-button {
@@ -174,23 +179,28 @@
         border-radius: 10px;
     }
 
-    /* .bm-cross-button {
-        height: 84px;
-        width: 44px;
+    .bm-cross-button {
+        top: 40px !important;
+        right: 40px !important;
+    }
+    
+    .bm-cross {
+        width: 35px !important;
+        height: 7px !important;
+        background: #fff;
+        top: 0px;
+        right: -20px;
     }
 
-    .bm-cross {
-        background: #fff;
-        right: 15px;
-    } */
-
+    .bm-menu-wrap{
+        margin-top: -105px;
+    }
     .bm-menu {
         background: #000;
-        margin-top: -23px;
     }
 
     .buttonContainer {
-        margin: 6rem 2rem;
+        padding: 12rem 0rem 5rem 4rem;
         display: flex !important;
         flex-direction: column;
         gap: 1.5rem;
@@ -199,7 +209,7 @@
         width: 80%;
     }
     .dropdown button , .dropdown2 button {
-        font-size: 18px;
+        font-size: 22px;
     }
     .dropdownContent, .dropdownContent2{
         margin-left: 0;
@@ -210,5 +220,14 @@
     }
     .drpItem2{
         width: 80%;
+    }
+    .drpItem, .drpItem2{
+        padding: 0px 10px;
+    }
+    .drpTitle{
+        font-size: 18px;
+    }
+    .drpDesc{
+        font-size: 0.65rem;
     }
 }

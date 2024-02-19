@@ -1,5 +1,6 @@
 import Image from "next/image"
 import './Footer.css'
+import Link from "next/link"
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material"
 
 const Footer = () => {
@@ -15,10 +16,18 @@ const Footer = () => {
                         alt="Flogo"
                     />
                     <div className="FSection2">
-                        <Facebook />
-                        <Instagram />
-                        <Twitter />
-                        <LinkedIn />
+                        <Link href={''}>
+                            <Facebook />
+                        </Link>
+                        <Link href={'https://www.instagram.com/bitindiaofficial/'} target="blank">
+                            <Instagram />
+                        </Link>
+                        <Link href={'https://twitter.com/BitIndia_'} target="blank">
+                            <Twitter />
+                        </Link>
+                        <Link href={'https://www.linkedin.com/company/beyond-imagination-technlogies-pvt-ltd/'} target="blank">
+                            <LinkedIn />
+                        </Link>
                     </div>
                 </div>
                 <div className="Faddress">
