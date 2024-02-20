@@ -63,9 +63,7 @@ const Roadmap = () => {
                                     <p>After the IDO, the projects token will be listed on a decentralized exchange, making it available for trading among users.</p>
                                     <h2>BitBhoomi Mainnet Launch</h2>
                                     <p>This is the official launch of the BitBhoomi platform on the mainnet, meaning it will be fully operational and accessible to users.</p>
-                                    <h2>BitBhoomi Beta Launch</h2>
-                                    <p>The beta version of BitBhoomi will be released, allowing users to test and provide feedback on the platform before its official launch.</p>
-                                </div>
+                              </div>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
