@@ -88,7 +88,7 @@ const Sidebar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={'https://bitdpp.com/'} >
+                            <Link href={'https://bitdpp.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">BitDpp</h4>

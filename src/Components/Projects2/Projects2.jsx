@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect } from "react";
 import { carousalData2 } from "./carousalData2";
+import Link from "next/link";
 
 const Projects2 = () => {
   const [slidesToShow, setSlidesToShow] = useState(4);
@@ -69,62 +70,64 @@ const Projects2 = () => {
                 your digital assets, offering a seamless and user-friendly
                 experience.
               </p>
-              <button className="launchButton">
-                <span>Launch Dapp</span>{" "}
-                <Image
-                  src={"/assets/launch.svg"}
-                  width={40}
-                  height={40}
-                  alt="launch"
-                />
-              </button>
+              <Link href={'https://bitdpp.com/'} target="blank">
+                <button className="launchButton">
+                  <span>Launch Dapp</span>{" "}
+                  <Image
+                    src={"/assets/launch.svg"}
+                    width={40}
+                    height={40}
+                    alt="launch"
+                  />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
 
 
-      <div className="bhoomiSection">
-        <div className="bhoomi">
-          <h1>BitBhoomi</h1>
-          <div className="bhoomiSubT">
-            <p>Where Technology Meets Sustainability</p>
-          </div>
-          <p>
-            A revolutionary platform that harnesses the power of blockchain to
-            bring unprecedented transparency to tree plantation activities.
-          </p>
-          <button className="launchButton">
-            <span>Launch Dapp</span>{" "}
-            <Image
-              src={"/assets/launch.svg"}
-              width={40}
-              height={40}
-              alt="launch"
+        <div className="bhoomiSection">
+          <div className="bhoomi">
+            <h1>BitBhoomi</h1>
+            <div className="bhoomiSubT">
+              <p>Where Technology Meets Sustainability</p>
+            </div>
+            <p>
+              A revolutionary platform that harnesses the power of blockchain to
+              bring unprecedented transparency to tree plantation activities.
+            </p>
+            <button className="launchButton">
+              <span>Launch Dapp</span>{" "}
+              <Image
+                src={"/assets/launch.svg"}
+                width={40}
+                height={40}
+                alt="launch"
               />
-          </button>
-        </div>
+            </button>
+          </div>
 
-        <div className="carousalSection">
-          <Slider {...settings} className="slider">
-            {carousalData2.map((data, index) => (
-              <div key={index} className="carousal">
-                <div className="box">
-                  <Image
-                    src={`${data.img}`}
-                    className="boxImg"
-                    width={50}
-                    height={50}
-                    alt="boximg"
+          <div className="carousalSection">
+            <Slider {...settings} className="slider">
+              {carousalData2.map((data, index) => (
+                <div key={index} className="carousal">
+                  <div className="box">
+                    <Image
+                      src={`${data.img}`}
+                      className="boxImg"
+                      width={50}
+                      height={50}
+                      alt="boximg"
                     />
-                  <h2>{data.title}</h2>
-                  <p>{data.desc}</p>
+                    <h2>{data.title}</h2>
+                    <p>{data.desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
-            </div>
 
       <div className="dppContainer">
         <div className="DPP">
