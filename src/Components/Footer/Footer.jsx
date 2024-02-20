@@ -16,7 +16,7 @@ const Footer = () => {
                         alt="Flogo"
                     />
                     <div className="FSection2">
-                        <Link href={''}>
+                        <Link href={'https://www.facebook.com/bitindia.official'} target="blank">
                             <Facebook />
                         </Link>
                         <Link href={'https://www.instagram.com/bitindiaofficial/'} target="blank">

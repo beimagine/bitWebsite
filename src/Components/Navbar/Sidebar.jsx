@@ -6,8 +6,13 @@ import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
 import "./Navbar.css";
 
-const Sidebar = (props) => {
-    
+const Sidebar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <div className="sidebar" >
             <div className="logoContainer">
@@ -18,7 +23,7 @@ const Sidebar = (props) => {
                     alt="logo"
                 />
             </div>
-            <Menu right  width={'100%'}>
+            <Menu right isOpen={menuOpen} onStateChange={({isOpen}) => setMenuOpen(isOpen)} disableOverlayClick width={'100%'}>
                 <div className="sidelogo">
                     <Image
                         src={'/assets/logo.svg'}
@@ -43,7 +48,7 @@ const Sidebar = (props) => {
                         <div className="dropdownContent">
                             <Link href={'http://www.bitmemoir.com/'} target="blank">
                                 <div className="drpItem">
-                                    <div className="drpItemContent">
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">Bitmemoir</h4>
                                         <p className="drpDesc">Issue.Store.Verify.Retrieve</p>
                                     </div>
@@ -121,7 +126,7 @@ const Sidebar = (props) => {
                         <div className="dropdownContent2">
                             <Scroll to="team" smooth={true} duration={500} >
                                 <div className="drpItem2" >
-                                    <div className="drpItemContent" >
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">Team</h4>
                                     </div>
                                     <Image
@@ -132,9 +137,9 @@ const Sidebar = (props) => {
                                         alt="drpItemimg" />
                                 </div>
                             </Scroll>
-                            <Scroll to="partners">
+                            <Scroll to="partners" smooth={true} duration={500}>
                                 <div className="drpItem2">
-                                    <div className="drpItemContent">
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">Partners</h4>
                                     </div>
                                     <Image
@@ -145,9 +150,9 @@ const Sidebar = (props) => {
                                         alt="drpItemimg" />
                                 </div>
                             </Scroll>
-                            <Scroll to="roadmap">
+                            <Scroll to="roadmap" smooth={true} duration={500}>
                                 <div className="drpItem2">
-                                    <div className="drpItemContent">
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">Roadmap</h4>
                                     </div>
                                     <Image
@@ -161,11 +166,6 @@ const Sidebar = (props) => {
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="normalButtonContainer">
-                <button className="normalButton"><span>Contact Us</span></button>
-            </div> */}
-        
             </Menu >
         </div>
     )

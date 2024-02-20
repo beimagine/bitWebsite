@@ -59,12 +59,6 @@ const Projects2 = () => {
         <div className="walletContainer">
           <div className="wallet">
             <div className="walletImg">
-              {/* <Image
-            src={"/assets/walletD.svg"}
-            width={500}
-            height={600}
-            alt="walletD"
-          /> */}
               <img src="/assets/walletD.svg"></img>
             </div>
             <div className="walletContent">
@@ -135,12 +129,6 @@ const Projects2 = () => {
       <div className="dppContainer">
         <div className="DPP">
           <div className="DPPImg">
-            {/* <Image
-            src={"/assets/DppD.svg"}
-            width={700}
-            height={600}
-            alt="DppD"
-          /> */}
             <img src="/assets/DppD.svg"></img>
           </div>
           <div className="DPPContent">
