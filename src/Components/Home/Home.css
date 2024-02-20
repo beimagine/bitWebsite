@@ -123,7 +123,7 @@
     z-index: 2;
     background-repeat: no-repeat;
     background-position: right 0rem top -30rem;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 @media only screen and (max-width: 768px) {
