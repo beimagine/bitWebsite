@@ -91,11 +91,13 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className="dropdown">
-                        <button>
-                            Use Cases
-                        </button>
-                    </div>
+                    <Scroll to='projects' smooth={true} duration={500}>
+                        <div className="dropdown">
+                            <button>
+                                Use Cases
+                            </button>
+                        </div>
+                    </Scroll>
 
                     <div className="dropdown2">
                         <button>
@@ -153,9 +155,11 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="normalButtonContainer">
-                    <button className="normalButton"><span>Contact Us</span></button>
-                </div>
+                    <div className="normalButtonContainer">
+                <Scroll to='contact' smooth={true} duration={500}>
+                        <button className="normalButton"><span>Contact Us</span></button>
+                </Scroll>
+                    </div>
 
             </div>
             <div className="side">

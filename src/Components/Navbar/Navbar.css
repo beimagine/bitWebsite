@@ -8,10 +8,9 @@
     background-color: transparent;
 }
 
-.logoContainer {
-    margin-left: 3%;
+.logoContainer{
+    margin-left: 2%;
 }
-
 .buttonContainer {
     display: flex;
     gap: 4.6rem;
@@ -109,13 +108,13 @@
     border: none;
     outline: none;
     cursor: pointer;
-    /* background-color: transparent; */
     position: relative;
     padding: 14px 16px;
     font-size: 16px;
     border-radius: 30px;
     background: linear-gradient(to left, #C4218D, #D9D9D914);
     z-index: 1;
+    width: max-content;
 }
 
 .normalButton::before {

@@ -23,7 +23,7 @@ const Sidebar = () => {
                     alt="logo"
                 />
             </div>
-            <Menu right isOpen={menuOpen} onStateChange={({isOpen}) => setMenuOpen(isOpen)} disableOverlayClick width={'100%'}>
+            <Menu right isOpen={menuOpen} onStateChange={({ isOpen }) => setMenuOpen(isOpen)} disableOverlayClick width={'100%'}>
                 <div className="sidelogo">
                     <Image
                         src={'/assets/logo.svg'}
@@ -62,7 +62,7 @@ const Sidebar = () => {
                             </Link>
                             <Link href={''}>
                                 <div className="drpItem">
-                                    <div className="drpItemContent">
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">BitWallet</h4>
                                         <p className="drpDesc">Your Secure Digital Wallet</p>
                                     </div>
@@ -76,7 +76,7 @@ const Sidebar = () => {
                             </Link>
                             <Link href={''}>
                                 <div className="drpItem">
-                                    <div className="drpItemContent">
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">BitBhoomi</h4>
                                         <p className="drpDesc">Where Technology Meets Sustainability</p>
                                     </div>
@@ -88,9 +88,9 @@ const Sidebar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={''}>
+                            <Link href={''} >
                                 <div className="drpItem">
-                                    <div className="drpItemContent">
+                                    <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">BitDpp</h4>
                                         <p className="drpDesc">The New-Age Digital Product Passport</p>
                                     </div>
@@ -105,11 +105,13 @@ const Sidebar = () => {
                         </div>
                     </div>
 
-                    <div className="dropdown">
-                        <button>
-                            Use Cases
-                        </button>
-                    </div>
+                    <Scroll to='projects' smooth={true} duration={500}>
+                        <div className="dropdown">
+                            <button onClick={closeMenu}>
+                                Use Cases
+                            </button>
+                        </div>
+                    </Scroll>
 
                     <div className="dropdown2">
                         <button>

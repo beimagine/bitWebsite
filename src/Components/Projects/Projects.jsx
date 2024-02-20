@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect } from "react";
 import { carousalData } from "./carousalData";
 import Link from "next/link";
+import { Element } from "react-scroll";
 const Projects = () => {
     const [slidesToShow, setSlidesToShow] = useState(4);
     const [slidesToScroll, setSlidesToScroll] = useState(3);
@@ -55,54 +56,56 @@ const Projects = () => {
 
     return (
         <>
-            <div className="projectContainer">
-                <h1 className="PTitle">
-                    <span className="PWord">Our Projects</span>
-                </h1>
-                <div className="memoir">
-                    <h1>Bitmemoir</h1>
-                    <div className="memoirSubT">
-                        <ul>
-                            <li>Issue</li>
-                            <li>Retrive</li>
-                            <li>Store</li>
-                            <li>Verify</li>
-                        </ul>
+            <Element name="projects">
+                <div className="projectContainer">
+                    <h1 className="PTitle">
+                        <span className="PWord">Our Projects</span>
+                    </h1>
+                    <div className="memoir">
+                        <h1>Bitmemoir</h1>
+                        <div className="memoirSubT">
+                            <ul>
+                                <li>Issue</li>
+                                <li>Retrive</li>
+                                <li>Store</li>
+                                <li>Verify</li>
+                            </ul>
+                        </div>
+                        <p>
+                            Bringing a paradigm shift in the traditional approach to document
+                            management and sharing, this NFT utility platform, leverages
+                            blockchain technology to create a decentralized way to secure digital
+                            records and create a tamper-proof infrastructure.
+                        </p>
+                        <Link href={'http://www.bitmemoir.com/'} target="blank">
+                            <button className="mlaunchButton">
+                                <span>Launch Dapp</span>{" "}
+                                <Image src={"/assets/launch.svg"} width={40} height={40} alt="launch" />
+                            </button>
+                        </Link>
                     </div>
-                    <p>
-                        Bringing a paradigm shift in the traditional approach to document
-                        management and sharing, this NFT utility platform, leverages
-                        blockchain technology to create a decentralized way to secure digital
-                        records and create a tamper-proof infrastructure.
-                    </p>
-                    <Link href={'http://www.bitmemoir.com/'} target="blank">
-                    <button className="mlaunchButton">
-                        <span>Launch Dapp</span>{" "}
-                        <Image src={"/assets/launch.svg"} width={40} height={40} alt="launch" />
-                    </button>
-                    </Link>
-                </div>
 
-                <div className="carousalSection">
-                    <Slider {...settings} className="slider">
-                        {carousalData.map((data, index) => (
-                            <div key={index} className="carousal">
-                                <div className="box">
-                                    <Image
-                                        src={`${data.img}`}
-                                        className="boxImg"
-                                        width={50}
-                                        height={50}
-                                        alt="boximg"
-                                    />
-                                    <h2>{data.title}</h2>
-                                    <p>{data.desc}</p>
+                    <div className="carousalSection">
+                        <Slider {...settings} className="slider">
+                            {carousalData.map((data, index) => (
+                                <div key={index} className="carousal">
+                                    <div className="box">
+                                        <Image
+                                            src={`${data.img}`}
+                                            className="boxImg"
+                                            width={50}
+                                            height={50}
+                                            alt="boximg"
+                                        />
+                                        <h2>{data.title}</h2>
+                                        <p>{data.desc}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
-            </div>
+            </Element>
         </>
     );
 };

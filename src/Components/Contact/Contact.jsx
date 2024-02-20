@@ -1,6 +1,9 @@
+'use client'
+import { Element } from 'react-scroll'
 import './Contact.css'
 const Contact = () => {
     return (
+        <Element name='contact'>
         <div className="contact">
             <form action="#" method="post">
                 <h1 className="contactTitle">Contact us</h1>
@@ -16,6 +19,7 @@ const Contact = () => {
                 <img src='/assets/Cimg.svg' />
             </div>
         </div>
+        </Element>
     )
 }
 export default Contact;
