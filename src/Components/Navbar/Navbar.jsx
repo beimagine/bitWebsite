@@ -74,7 +74,7 @@ const Navbar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={''}>
+                            <Link href={'https://bitdpp.com/'}>
                                 <div className="drpItem">
                                     <div className="drpItemContent">
                                         <h4 className="drpTitle">BitDpp</h4>
