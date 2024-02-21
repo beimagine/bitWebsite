@@ -13,6 +13,12 @@ const Sidebar = () => {
         setMenuOpen(false);
     };
 
+    const error = console.error;
+    console.error = (...args) => {
+        if (/defaultProps/.test(args[0])) return;
+        error(...args);
+    };
+
     return (
         <div className="sidebar" >
             <div className="logoContainer">
@@ -172,4 +178,6 @@ const Sidebar = () => {
         </div>
     )
 }
+
+
 export default Sidebar;

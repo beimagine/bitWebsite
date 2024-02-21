@@ -13,6 +13,10 @@ pnpm dev
 # or
 bun dev
 ```
+## Contact
+I have used emailjs/browser 
+create an account in Emailjs , connect the email service, create a template in it
+add the service and templates ID's in code and add public key in code.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
