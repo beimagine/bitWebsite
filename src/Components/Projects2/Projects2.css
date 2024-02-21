@@ -107,6 +107,7 @@
     gap: 5px;
     border-radius: 35px;
     border: none;
+    cursor: pointer;
     background: linear-gradient(267.91deg, rgba(251, 160, 95, 0.88) 2.86%, #C4218D 51.43%, #7003B3 98.06%);
 }
 
