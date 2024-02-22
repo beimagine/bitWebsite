@@ -70,15 +70,17 @@ const Projects2 = () => {
                 your digital assets, offering a seamless and user-friendly
                 experience.
               </p>
-              <button className="launchButton">
-                <span>Launch Dapp</span>{" "}
-                <Image
-                  src={"/assets/launch.svg"}
-                  width={40}
-                  height={40}
-                  alt="launch"
-                />
-              </button>
+              <Link href={'https://www.thebitwallet.com/'} target="blank">
+                <button className="launchButton">
+                  <span>Launch Dapp</span>{" "}
+                  <Image
+                    src={"/assets/launch.svg"}
+                    width={40}
+                    height={40}
+                    alt="launch"
+                  />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

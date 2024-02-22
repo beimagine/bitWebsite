@@ -46,7 +46,7 @@ const Navbar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={''}>
+                            <Link href={'https://www.thebitwallet.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent">
                                         <h4 className="drpTitle">BitWallet</h4>

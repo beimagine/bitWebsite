@@ -66,7 +66,7 @@ const Sidebar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={''}>
+                            <Link href={'https://www.thebitwallet.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">BitWallet</h4>

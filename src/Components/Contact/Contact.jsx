@@ -1,7 +1,7 @@
 'use client'
 import { Element } from 'react-scroll'
 import './Contact.css'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser'
 const Contact = () => {
 
@@ -10,7 +10,28 @@ const Contact = () => {
     const [company, setCompany] = useState("")
     const [message, setMessage] = useState("");
 
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState("");
+
+    useEffect(() => {
+        if (showPopup) {
+            const timeoutId = setTimeout(() => {
+                setShowPopup(false);
+                setPopupMessage("");
+            }, 3000);
+
+            return () => clearTimeout(timeoutId);
+        }
+    }, [showPopup]);
+
     const sendMail = () => {
+
+        if (!fullName || !email || !company || !message) {
+            setShowPopup(true);
+            setPopupMessage("Please fill in all required fields !");
+            return;
+        }
+
         const params = {
             from_name: fullName,
             email_id: email,
@@ -25,9 +46,13 @@ const Contact = () => {
                 setEmail('');
                 setCompany('');
                 setMessage('');
+                setShowPopup(true);
+                setPopupMessage("Thank you for reaching out us, well get back to you");
             },
             (err) => {
                 console.log("FAILED...", err);
+                setShowPopup(true);
+                setPopupMessage("Message failed to send. Please try again later.");
             }
         );
     };
@@ -38,7 +63,7 @@ const Contact = () => {
     return (
         <Element name='contact'>
             <div className="contact">
-                <form action="#" method="post">
+                <form action="#" method="post" onSubmit={handleSubmit}>
                     <h1 className="contactTitle">Contact us</h1>
                     <input placeholder='Name' value={fullName} onChange={(e) => setFullName(e.target.value)} type="text" className="name" name="name" required />
                     <input placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="email" name="email" required />
@@ -51,6 +76,11 @@ const Contact = () => {
                 <div className='Cimg'>
                     <img src='/assets/Cimg.svg' />
                 </div>
+                {showPopup && (
+                    <div className={`popup ${popupMessage.includes("failed") ? "error" : "success"} ${popupMessage.includes("fields") ? "empty" : ""}`}>
+                        {popupMessage}
+                    </div>
+                )}
             </div>
         </Element>
     )
