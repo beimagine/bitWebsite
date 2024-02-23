@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="Faddress">
-                    <p>M03 Laffa restaurant building, Sheikh Khalifa Bin Zayed St-opp. Burjuman Mall, Dubai, United Arab Emirated</p>
+                    <p>M03 Laffa restaurant building, Sheikh Khalifa Bin Zayed St-opp. Burjuman Mall, Dubai, United Arab Emirates</p>
                 </div>
             </div>
             <p className="copyright">© 2023 Beyond Imagination Technologies Pvt. Ltd.</p>
