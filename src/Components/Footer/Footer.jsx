@@ -16,16 +16,16 @@ const Footer = () => {
                         alt="Flogo"
                     />
                     <div className="FSection2">
-                        <Link href={'https://www.facebook.com/bitindia.official'} target="blank">
+                        <Link href={'https://www.facebook.com/beimagine.tech/'} target="blank">
                             <Facebook />
                         </Link>
-                        <Link href={'https://www.instagram.com/bitindiaofficial/'} target="blank">
+                        <Link href={'https://www.instagram.com/beimagine_tech'} target="blank">
                             <Instagram />
                         </Link>
-                        <Link href={'https://twitter.com/BitIndia_'} target="blank">
+                        <Link href={'https://twitter.com/beimagine_tech'} target="blank">
                             <Twitter />
                         </Link>
-                        <Link href={'https://www.linkedin.com/company/beyond-imagination-technlogies-pvt-ltd/'} target="blank">
+                        <Link href={'https://www.linkedin.com/company/beyond-imagination-technlogies-pvt-ltd'} target="blank">
                             <LinkedIn />
                         </Link>
                     </div>
