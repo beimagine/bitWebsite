@@ -80,7 +80,7 @@ const Sidebar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={''}>
+                            <Link href={'https://www.bitbhoomi.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent" onClick={closeMenu}>
                                         <h4 className="drpTitle">BitBhoomi</h4>
@@ -132,10 +132,10 @@ const Sidebar = () => {
                                 alt="NavBimg" />
                         </button>
                         <div className="dropdownContent2">
-                            <Scroll to="team" smooth={true} duration={500} >
-                                <div className="drpItem2" >
+                            <Scroll to="roadmap" smooth={true} duration={500}>
+                                <div className="drpItem2">
                                     <div className="drpItemContent" onClick={closeMenu}>
-                                        <h4 className="drpTitle">Team</h4>
+                                        <h4 className="drpTitle">Roadmap</h4>
                                     </div>
                                     <Image
                                         className="drpItemImg"
@@ -158,10 +158,10 @@ const Sidebar = () => {
                                         alt="drpItemimg" />
                                 </div>
                             </Scroll>
-                            <Scroll to="roadmap" smooth={true} duration={500}>
-                                <div className="drpItem2">
+                            <Scroll to="team" smooth={true} duration={500} >
+                                <div className="drpItem2" >
                                     <div className="drpItemContent" onClick={closeMenu}>
-                                        <h4 className="drpTitle">Roadmap</h4>
+                                        <h4 className="drpTitle">Team</h4>
                                     </div>
                                     <Image
                                         className="drpItemImg"

@@ -60,7 +60,7 @@ const Navbar = () => {
                                         alt="drpimg" />
                                 </div>
                             </Link>
-                            <Link href={''}>
+                            <Link href={'https://www.bitbhoomi.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent">
                                         <h4 className="drpTitle">BitBhoomi</h4>
@@ -112,10 +112,10 @@ const Navbar = () => {
                                 alt="NavBimg" />
                         </button>
                         <div className="dropdownContent2">
-                            <Scroll to='team' smooth={true} duration={500}>
+                            <Scroll to='roadmap' smooth={true} duration={500}>
                                 <div className="drpItem2">
                                     <div className="drpItemContent">
-                                        <h4 className="drpTitle">Team</h4>
+                                        <h4 className="drpTitle">Roadmap</h4>
                                     </div>
                                     <Image
                                         className="drpItemImg"
@@ -138,10 +138,10 @@ const Navbar = () => {
                                         alt="drpItemimg" />
                                 </div>
                             </Scroll>
-                            <Scroll to='roadmap' smooth={true} duration={500}>
+                            <Scroll to='team' smooth={true} duration={500}>
                                 <div className="drpItem2">
                                     <div className="drpItemContent">
-                                        <h4 className="drpTitle">Roadmap</h4>
+                                        <h4 className="drpTitle">Team</h4>
                                     </div>
                                     <Image
                                         className="drpItemImg"

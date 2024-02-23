@@ -72,10 +72,7 @@ const Projects = () => {
                             </ul>
                         </div>
                         <p>
-                            Bringing a paradigm shift in the traditional approach to document
-                            management and sharing, this NFT utility platform, leverages
-                            blockchain technology to create a decentralized way to secure digital
-                            records and create a tamper-proof infrastructure.
+                            Bringing a paradigm shift to the traditional approach of document management and sharing, this NFT utility platform leverages blockchain technology to create a decentralized way to secure digital records and establish a tamper-proof infrastructure.
                         </p>
                         <Link href={'http://www.bitmemoir.com/'} target="blank">
                             <button className="mlaunchButton">

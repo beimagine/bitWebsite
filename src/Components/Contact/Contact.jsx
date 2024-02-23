@@ -47,7 +47,7 @@ const Contact = () => {
                 setCompany('');
                 setMessage('');
                 setShowPopup(true);
-                setPopupMessage("Thank you for reaching out us, well get back to you");
+                setPopupMessage("Thank you for reaching out. Our team will connect with you soon.");
             },
             (err) => {
                 console.log("FAILED...", err);

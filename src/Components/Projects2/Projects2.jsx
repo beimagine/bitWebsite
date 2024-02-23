@@ -96,15 +96,17 @@ const Projects2 = () => {
               A revolutionary platform that harnesses the power of blockchain to
               bring unprecedented transparency to tree plantation activities.
             </p>
-            <button className="launchButton">
-              <span>Launch Dapp</span>{" "}
-              <Image
-                src={"/assets/launch.svg"}
-                width={40}
-                height={40}
-                alt="launch"
-              />
-            </button>
+            <Link href={'https://www.bitbhoomi.com/'} target="blank">
+              <button className="launchButton">
+                <span>Launch Dapp</span>{" "}
+                <Image
+                  src={"/assets/launch.svg"}
+                  width={40}
+                  height={40}
+                  alt="launch"
+                />
+              </button>
+            </Link>
           </div>
 
           <div className="carousalSection">
