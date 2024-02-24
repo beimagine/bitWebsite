@@ -63,7 +63,7 @@ const Projects2 = () => {
               <img src="/assets/walletD.svg"></img>
             </div>
             <div className="walletContent">
-              <h1>Bit Wallet</h1>
+              <h1>BitWallet</h1>
               <p className="walletSubT">Your Secure Digital Wallet</p>
               <p className="walletPara">
                 Your go-to non-custodial digital wallet that ensures the safety of
