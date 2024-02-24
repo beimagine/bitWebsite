@@ -56,53 +56,53 @@ const Projects = () => {
 
     return (
         <>
-            <Element name="projects">
-                <div className="projectContainer">
+            <div className="projectContainer">
+                <Element name="projects">
                     <h1 className="PTitle">
                         <span className="PWord">Our Projects</span>
                     </h1>
-                    <div className="memoir">
-                        <h1>BitMemoir</h1>
-                        <div className="memoirSubT">
-                            <ul>
-                                <li>Issue</li>
-                                <li>Store</li>
-                                <li>Verify</li>
-                                <li>Retrieve</li>
-                            </ul>
-                        </div>
-                        <p>
-                            Bringing a paradigm shift to the traditional approach of document management and sharing, this NFT utility platform leverages blockchain technology to create a decentralized way to secure digital records and establish a tamper-proof infrastructure.
-                        </p>
-                        <Link href={'http://www.bitmemoir.com/'} target="blank">
-                            <button className="mlaunchButton">
-                                <span>Launch Dapp</span>{" "}
-                                <Image src={"/assets/launch.svg"} width={40} height={40} alt="launch" />
-                            </button>
-                        </Link>
+                </Element>
+                <div className="memoir">
+                    <h1>BitMemoir</h1>
+                    <div className="memoirSubT">
+                        <ul>
+                            <li>Issue</li>
+                            <li>Store</li>
+                            <li>Verify</li>
+                            <li>Retrieve</li>
+                        </ul>
                     </div>
-
-                    <div className="carousalSection">
-                        <Slider {...settings} className="slider">
-                            {carousalData.map((data, index) => (
-                                <div key={index} className="carousal">
-                                    <div className="box">
-                                        <Image
-                                            src={`${data.img}`}
-                                            className="boxImg"
-                                            width={50}
-                                            height={50}
-                                            alt="boximg"
-                                        />
-                                        <h2>{data.title}</h2>
-                                        <p>{data.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </Slider>
-                    </div>
+                    <p>
+                        Bringing a paradigm shift to the traditional approach of document management and sharing, this NFT utility platform leverages blockchain technology to create a decentralized way to secure digital records and establish a tamper-proof infrastructure.
+                    </p>
+                    <Link href={'http://www.bitmemoir.com/'} target="blank">
+                        <button className="mlaunchButton">
+                            <span>Launch Dapp</span>{" "}
+                            <Image src={"/assets/launch.svg"} width={40} height={40} alt="launch" />
+                        </button>
+                    </Link>
                 </div>
-            </Element>
+
+                <div className="carousalSection">
+                    <Slider {...settings} className="slider">
+                        {carousalData.map((data, index) => (
+                            <div key={index} className="carousal">
+                                <div className="box">
+                                    <Image
+                                        src={`${data.img}`}
+                                        className="boxImg"
+                                        width={50}
+                                        height={50}
+                                        alt="boximg"
+                                    />
+                                    <h2>{data.title}</h2>
+                                    <p>{data.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div >
         </>
     );
 };

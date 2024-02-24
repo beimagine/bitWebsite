@@ -2,6 +2,7 @@
     background:url(/assets/starsBg.png);
     background-size: cover;
     background-position:left 0 top 30%;
+    padding-top: 8rem;
 }
 
 .partnerTitle {

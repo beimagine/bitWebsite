@@ -6,7 +6,7 @@ export const teamData = [
     },
     {
         img : '/assets/T11.svg',
-        role : 'Co-founder and CTO',
+        role : 'Co-Founder and CTO',
         name : 'Anthony Raj',
         ex: '(Ex-Microsoft and Cisco)'
     },
