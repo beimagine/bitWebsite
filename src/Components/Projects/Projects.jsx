@@ -62,13 +62,13 @@ const Projects = () => {
                         <span className="PWord">Our Projects</span>
                     </h1>
                     <div className="memoir">
-                        <h1>Bitmemoir</h1>
+                        <h1>BitMemoir</h1>
                         <div className="memoirSubT">
                             <ul>
                                 <li>Issue</li>
-                                <li>Retrive</li>
                                 <li>Store</li>
                                 <li>Verify</li>
+                                <li>Retrieve</li>
                             </ul>
                         </div>
                         <p>

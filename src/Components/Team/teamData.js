@@ -5,8 +5,14 @@ export const teamData = [
         name : 'Nikhil Goyal',
     },
     {
+        img : '/assets/T11.svg',
+        role : 'Co-founder and CTO',
+        name : 'Anthony Raj',
+        ex: '(Ex-Microsoft and Cisco)'
+    },
+    {
         img : '/assets/T2.svg',
-        role : 'Latam Team Head',
+        role : 'COO',
         name : 'Alejandro Giuffrida',
     },
     // {

@@ -20,6 +20,7 @@ const Team = () => {
                             />
                             <p>{data.role}</p>
                             <h3>{data.name}</h3>
+                            <h4 className="ex">{data.ex}</h4>
                         </div>
                     ))}
                 </div>

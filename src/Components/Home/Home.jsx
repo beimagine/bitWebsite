@@ -14,7 +14,7 @@ const Home = () => {
             <div className="Home">
                 <div className="HContent">
                     <h1 ><span className='Bword1'>Transforming Tomorrow with Innovative</span><br></br> <span className='Bword2'>Blockchain Solutions</span></h1>
-                    <p>Welcome to Beyond Imagination Technologiesnologies, where innovation meets limitless possibilities. Explore the world of cutting-edge solutions and transformative technologiesnologies. From pioneering blockchain applications to revolutionary environmental platforms, we are redefining the future. Discover, innovate, and shape the future with Beyond Imagination Technologies.</p>
+                    <p>Welcome to Beyond Imagination Technologies, where innovation meets limitless possibilities. Explore the world of cutting-edge solutions and transformative technologies. From pioneering blockchain applications to revolutionary environmental platforms, we are redefining the future. Discover, innovate, and shape the future with Beyond Imagination Technologies.</p>
                     <Scroll to='projects' smooth={true} duration={500}>
                     <button className='learnButton'>Learn More</button>
                     </Scroll>
@@ -26,7 +26,7 @@ const Home = () => {
                     <h1>
                         <span className='visionWord'>Our Vision</span>
                     </h1>
-                    <p>Welcome to Beyond Imagination Technologies, where innovation meets limitless possibilities. Explore the world of cutting-edge solutions and transformative technologiesnologies. From pioneering blockchain applications to revolutionary environmental platforms, we are redefining the future. Discover, innovate, and shape the future with Beyond Imagination Technologies.</p>
+                    <p>Our vision is to pioneer the next frontier of technological evolution by designing revolutionary blockchain-based products. We are committed to crafting solutions that transcend imagination, addressing real-world challenges with innovation, transparency, and a commitment to creating lasting positive impact.</p>
                 </div>
             </div>
             <br></br>

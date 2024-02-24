@@ -6,7 +6,7 @@ export const carousalData = [
     },
     {
         img: '/assets/M2.png',
-        title: 'Education Section',
+        title: 'Education Sector',
         desc: 'Skills Passport and Verified Credentials',
     },
     {

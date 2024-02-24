@@ -40,11 +40,19 @@
     font-weight: 600;
 }
 
+.ex{
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    color: #D9D9D9;
+}
+
 @media only screen and (max-width:768px) {
     .teamTitle{
         font-size: 26px;
     }
     .team{
         grid-gap: 55px;
+        flex-direction: column;
     }
 }

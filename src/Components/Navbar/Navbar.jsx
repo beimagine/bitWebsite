@@ -35,7 +35,7 @@ const Navbar = () => {
                             <Link href={'http://www.bitmemoir.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent">
-                                        <h4 className="drpTitle">Bitmemoir</h4>
+                                        <h4 className="drpTitle">BitMemoir</h4>
                                         <p className="drpDesc">Issue.Store.Verify.Retrieve</p>
                                     </div>
                                     <Image
@@ -77,7 +77,7 @@ const Navbar = () => {
                             <Link href={'https://bitdpp.com/'} target="blank">
                                 <div className="drpItem">
                                     <div className="drpItemContent">
-                                        <h4 className="drpTitle">BitDpp</h4>
+                                        <h4 className="drpTitle">BitDPP</h4>
                                         <p className="drpDesc">The New-Age Digital Product Passport</p>
                                     </div>
                                     <Image

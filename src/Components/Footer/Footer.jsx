@@ -1,7 +1,7 @@
 import Image from "next/image"
 import './Footer.css'
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material"
+import { Facebook, Instagram, X, LinkedIn } from "@mui/icons-material"
 
 const Footer = () => {
     return (
@@ -23,7 +23,7 @@ const Footer = () => {
                             <Instagram />
                         </Link>
                         <Link href={'https://twitter.com/beimagine_tech'} target="blank">
-                            <Twitter />
+                            <X/>
                         </Link>
                         <Link href={'https://www.linkedin.com/company/beyond-imagination-technlogies-pvt-ltd'} target="blank">
                             <LinkedIn />

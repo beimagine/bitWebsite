@@ -4,6 +4,7 @@
     flex-direction: column;
     height: 100vh;
     background-color: transparent;
+    margin-top: 6rem;
     background: url('/assets/starsBg.png') center center/cover no-repeat;
 }
 
@@ -93,7 +94,7 @@
 }
 
 .Vcontent {
-    width: 30%;
+    width: 40%;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
@@ -116,6 +117,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-top: 2rem;
+    text-align: left;
 }
 
 .TCBG {
@@ -129,7 +131,7 @@
 @media only screen and (max-width: 768px) {
     .Home {
         height: auto;
-        padding: 4rem 0rem;
+        padding: 4rem 0rem 4rem 0rem;
     }
 
     .HContent h1 {
