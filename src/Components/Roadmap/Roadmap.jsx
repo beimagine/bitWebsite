@@ -33,12 +33,12 @@ const Roadmap = () => {
                             <TimelineContent>
                                 <div className="Q1">
                                     <h1>Quarter 1</h1>
-                                    <h2>Bitmemoir Mainnet Launch</h2>
-                                    <p>The Bitmemoir platform will officially go live. People will be able to use it to issue, store, and share their sensitive documents and credentials.</p>
-                                    <h2>Bitmemoir Integration Framework</h2>
+                                    <h2>BitMemoir Mainnet Launch</h2>
+                                    <p>The BitMemoir platform will officially go live. People will be able to use it to issue, store, and share their sensitive documents and credentials.</p>
+                                    <h2>BitMemoir Integration Framework</h2>
                                     <p>Integration into other systems or platforms will be enabled, making the platform more versatile and accessible.</p>
-                                    <h2>Bitwallet Beta Launch</h2>
-                                    <p>The beta version of Bitwallet will be released which will allow users to store and manage their digital assets securely.</p>
+                                    <h2>BitWallet Beta Launch</h2>
+                                    <p>The beta version of BitWallet will be released which will allow users to store and manage their digital assets securely.</p>
                                     <h2>BitBhoomi MVP Launch</h2>
                                     <p>A basic version of BitBhoomi, will be launched, showcasing the core features and functionality of the platform.</p>
                                     <h2>BitBhoomi Beta Launch</h2>
@@ -96,10 +96,10 @@ const Roadmap = () => {
                                     <h1>Quarter 4</h1>
                                     <h2>BitBhoomi Full Launch</h2>
                                     <p>This is the official launch of the complete and fully functional BitBhoomi platform. Users will be able to utilize all the features and benefits of this revolutionary platform.</p>
-                                    <h2>Bitmemoir Enhancements</h2>
-                                    <p>During this quarter, Bitmemoir will undergo enhancements and improvements based on user feedback and market demands. This will make the platform even more robust and user-friendly.</p>
+                                    <h2>BitMemoir Enhancements</h2>
+                                    <p>During this quarter, BitMemoir will undergo enhancements and improvements based on user feedback and market demands. This will make the platform even more robust and user-friendly.</p>
                                     <h2>BitWallet Enhancements</h2>
-                                    <p>Similar to Bitmemoir, BitWallet will also receive enhancements and updates to improve its functionality and user experience</p>
+                                    <p>Similar to BitMemoir, BitWallet will also receive enhancements and updates to improve its functionality and user experience</p>
                                     <h2>DPP Mainnet Launch</h2>
                                     <p>The official launch of the Digital Product Passport (DPP) on the mainnet. Users will be able to utilize the full capabilities of DPP for verifying the authenticity and ownership of digital products</p>
                                     <h2>Community Engagement and Partnerships</h2>
