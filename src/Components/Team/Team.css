@@ -11,14 +11,13 @@
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     display: flex;
-    padding: 0px 5rem;
-    grid-gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     align-content: center;
-
-
+    flex-wrap: wrap;
+    padding-bottom: 8rem;
 }
 
 .Tbox {
@@ -27,6 +26,9 @@
     gap: 0.3rem;
     text-align: center;
     align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    height: 20rem;
 }
 
 .Tbox p {
@@ -54,5 +56,8 @@
     .team{
         grid-gap: 55px;
         flex-direction: column;
+    }
+    .Tbox{
+        width: 30%;
     }
 }
